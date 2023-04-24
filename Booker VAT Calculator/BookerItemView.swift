@@ -5,6 +5,8 @@ struct BookerItemList: View {
     @State private var itemPrice = ""
     @State private var itemHasVAT = true
     @State private var itemsList = [Item]()
+    @FocusState private var isItemNameFocused: Bool
+    @FocusState private var isItemPriceFocused: Bool
     
     var body: some View {
         NavigationView {
@@ -12,11 +14,18 @@ struct BookerItemList: View {
                 TextField("Item name", text: $itemName)
                     .textFieldStyle(.roundedBorder)
                     .padding(.bottom, 8)
+                    .focused($isItemNameFocused)
+                    .submitLabel(.next)
+                    .onSubmit {
+                        isItemNameFocused = false
+                        isItemPriceFocused = true
+                    }
                 
                 TextField("Item price in GBP", text: $itemPrice)
                     .textFieldStyle(.roundedBorder)
                     .keyboardType(.decimalPad)
                     .padding(.bottom, 8)
+                    .focused($isItemPriceFocused)
                 
                 HStack {
                     Text("Has VAT?")
@@ -32,6 +41,7 @@ struct BookerItemList: View {
                         itemName = ""
                         itemPrice = ""
                         itemHasVAT = true
+                        isItemNameFocused = true // set focus back to "Item name"
                     }
                 }) {
                     Text("Add Item")
