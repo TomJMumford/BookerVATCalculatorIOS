@@ -14,6 +14,7 @@
 		FD81EBB429F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBB329F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift */; };
 		FD81EBBE29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */; };
 		FD81EBC029F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */; };
+		FD81EBCD29F67302003C0C4B /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBCC29F67302003C0C4B /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		FD81EBB929F6725B003C0C4B /* Booker VAT CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booker VAT CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITests.swift; sourceTree = "<group>"; };
 		FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD81EBCC29F67302003C0C4B /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				FD81EBA429F67258003C0C4B /* ContentView.swift */,
 				FD81EBA629F6725B003C0C4B /* Assets.xcassets */,
 				FD81EBA829F6725B003C0C4B /* Preview Content */,
+				FD81EBCC29F67302003C0C4B /* ItemView.swift */,
 			);
 			path = "Booker VAT Calculator";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD81EBA529F67258003C0C4B /* ContentView.swift in Sources */,
+				FD81EBCD29F67302003C0C4B /* ItemView.swift in Sources */,
 				FD81EBA329F67258003C0C4B /* Booker_VAT_CalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
