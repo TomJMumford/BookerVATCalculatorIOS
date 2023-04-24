@@ -1,18 +1,11 @@
-//
-//  ItemView.swift
-//  Booker VAT Calculator
-//
-//  Created by Thomas Mumford on 24/04/2023.
-//
-
 import SwiftUI
 
-struct ItemList: View {
+struct BookerItemList: View {
     @State private var itemName = ""
     @State private var itemPrice = ""
     @State private var itemHasVAT = true
     @State private var itemsList = [Item]()
-
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -22,16 +15,16 @@ struct ItemList: View {
                 
                 TextField("Item price in GBP", text: $itemPrice)
                     .textFieldStyle(.roundedBorder)
-                    .keyboardType(.numberPad)
+                    .keyboardType(.decimalPad)
                     .padding(.bottom, 8)
-
+                
                 HStack {
                     Text("Has VAT?")
                     Spacer()
                     Toggle("", isOn: $itemHasVAT)
                 }
                 .padding(.bottom, 8)
-
+                
                 Button(action: {
                     if !itemName.isEmpty && !itemPrice.isEmpty {
                         let newItem = Item(name: itemName, price: Float(itemPrice)!, hasVAT: itemHasVAT)
@@ -49,11 +42,8 @@ struct ItemList: View {
                         .cornerRadius(8)
                 }
                 .padding(.bottom, 16)
-
+                
                 if !itemsList.isEmpty {
-                    Text("Items List")
-                        .padding(.bottom, 8)
-
                     ForEach(itemsList.indices, id: \.self) { index in
                         let item = itemsList[index]
                         let itemPriceWithVAT = item.priceWithVAT()
@@ -72,9 +62,9 @@ struct ItemList: View {
                         }
                         .padding(.bottom, 8)
                     }
-
+                    
                     Spacer()
-
+                    
                     let totalPrice = itemsList.map { $0.hasVAT ? $0.priceWithVAT() : $0.price }.reduce(0, +)
                     Text("Total Price: £\(String(format: "%.2f", totalPrice))")
                         .fontWeight(.semibold)
@@ -82,7 +72,7 @@ struct ItemList: View {
                 }
             }
             .padding()
-            .navigationBarTitle("Item List")
+            .navigationBarTitle("Booker VAT Calculator")
         }
     }
 }
@@ -91,9 +81,15 @@ struct Item {
     let name: String
     let price: Float
     let hasVAT: Bool
-
+    
     func priceWithVAT() -> Float {
         let vatRate: Float = 0.2
         return hasVAT ? price * (1 + vatRate) : price
+    }
+}
+
+struct ItemList_Previews: PreviewProvider {
+    static var previews: some View {
+        BookerItemList()
     }
 }

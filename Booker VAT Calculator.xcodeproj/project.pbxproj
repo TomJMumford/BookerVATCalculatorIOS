@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FD81EBA329F67258003C0C4B /* Booker_VAT_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */; };
-		FD81EBA529F67258003C0C4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBA429F67258003C0C4B /* ContentView.swift */; };
 		FD81EBA729F6725B003C0C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD81EBA629F6725B003C0C4B /* Assets.xcassets */; };
 		FD81EBAA29F6725B003C0C4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD81EBA929F6725B003C0C4B /* Preview Assets.xcassets */; };
 		FD81EBB429F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBB329F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift */; };
 		FD81EBBE29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */; };
 		FD81EBC029F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */; };
-		FD81EBCD29F67302003C0C4B /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBCC29F67302003C0C4B /* ItemView.swift */; };
+		FD81EBCD29F67302003C0C4B /* BookerItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBCC29F67302003C0C4B /* BookerItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +35,7 @@
 
 /* Begin PBXFileReference section */
 		FD81EB9F29F67258003C0C4B /* Booker VAT Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booker VAT Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorApp.swift; sourceTree = "<group>"; };
-		FD81EBA429F67258003C0C4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorApp.swift; sourceTree = "<group>"; usesTabs = 0; };
 		FD81EBA629F6725B003C0C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD81EBA929F6725B003C0C4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD81EBAF29F6725B003C0C4B /* Booker VAT CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booker VAT CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +43,7 @@
 		FD81EBB929F6725B003C0C4B /* Booker VAT CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booker VAT CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITests.swift; sourceTree = "<group>"; };
 		FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FD81EBCC29F67302003C0C4B /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		FD81EBCC29F67302003C0C4B /* BookerItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookerItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +95,9 @@
 			isa = PBXGroup;
 			children = (
 				FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */,
-				FD81EBA429F67258003C0C4B /* ContentView.swift */,
 				FD81EBA629F6725B003C0C4B /* Assets.xcassets */,
 				FD81EBA829F6725B003C0C4B /* Preview Content */,
-				FD81EBCC29F67302003C0C4B /* ItemView.swift */,
+				FD81EBCC29F67302003C0C4B /* BookerItemView.swift */,
 			);
 			path = "Booker VAT Calculator";
 			sourceTree = "<group>";
@@ -260,8 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD81EBA529F67258003C0C4B /* ContentView.swift in Sources */,
-				FD81EBCD29F67302003C0C4B /* ItemView.swift in Sources */,
+				FD81EBCD29F67302003C0C4B /* BookerItemView.swift in Sources */,
 				FD81EBA329F67258003C0C4B /* Booker_VAT_CalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,8 +417,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Booker VAT Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = HQJ25GTHA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Booker VAT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,8 +448,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Booker VAT Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = HQJ25GTHA8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Booker VAT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

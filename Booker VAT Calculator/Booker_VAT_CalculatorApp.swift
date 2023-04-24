@@ -11,9 +11,7 @@ import SwiftUI
 struct Booker_VAT_CalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ItemList()
-            }
+                BookerItemList()
         }
     }
 }
