@@ -10,78 +10,75 @@ struct BookerItemList: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TextField("Item name", text: $itemName)
-                    .textFieldStyle(.roundedBorder)
-                    .padding(.bottom, 8)
-                    .focused($isItemNameFocused)
-                    .submitLabel(.next)
-                    .onSubmit {
-                        isItemNameFocused = false
-                        isItemPriceFocused = true
+            ScrollView {
+                LazyVStack(spacing: 8) {
+                    TextField("Item name", text: $itemName)
+                        .textFieldStyle(.roundedBorder)
+                        .focused($isItemNameFocused)
+                        .submitLabel(.next)
+                        .onSubmit {
+                            isItemNameFocused = false
+                            isItemPriceFocused = true
+                        }
+                    
+                    TextField("Item price in GBP", text: $itemPrice)
+                        .textFieldStyle(.roundedBorder)
+                        .keyboardType(.decimalPad)
+                        .focused($isItemPriceFocused)
+                    
+                    HStack {
+                        Text("Has VAT?")
+                        Spacer()
+                        Toggle("", isOn: $itemHasVAT)
                     }
-                
-                TextField("Item price in GBP", text: $itemPrice)
-                    .textFieldStyle(.roundedBorder)
-                    .keyboardType(.decimalPad)
-                    .padding(.bottom, 8)
-                    .focused($isItemPriceFocused)
-                
-                HStack {
-                    Text("Has VAT?")
-                    Spacer()
-                    Toggle("", isOn: $itemHasVAT)
-                }
-                .padding(.bottom, 8)
-                
-                Button(action: {
-                    if !itemName.isEmpty && !itemPrice.isEmpty {
-                        let newItem = Item(name: itemName, price: Float(itemPrice)!, hasVAT: itemHasVAT)
-                        itemsList.append(newItem)
-                        itemName = ""
-                        itemPrice = ""
-                        itemHasVAT = true
-                        isItemNameFocused = true // set focus back to "Item name"
+                    
+                    Button(action: {
+                        if !itemName.isEmpty && !itemPrice.isEmpty {
+                            let newItem = Item(name: itemName, price: Float(itemPrice)!, hasVAT: itemHasVAT)
+                            itemsList.append(newItem)
+                            itemName = ""
+                            itemPrice = ""
+                            itemHasVAT = true
+                            isItemNameFocused = true // set focus back to "Item name"
+                        }
+                    }) {
+                        Text("Add Item")
+                            .frame(maxWidth: .infinity)
+                            .padding(18)
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
                     }
-                }) {
-                    Text("Add Item")
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(8)
-                }
-                .padding(.bottom, 16)
-                
-                if !itemsList.isEmpty {
-                    ForEach(itemsList.indices, id: \.self) { index in
-                        let item = itemsList[index]
-                        let itemPriceWithVAT = item.priceWithVAT()
-                        let itemPriceString = item.hasVAT ? "£\(String(format: "%.2f", itemPriceWithVAT)) (incl. VAT)" : "£\(String(format: "%.2f", item.price)) (excl. VAT)"
-                        
-                        HStack {
-                            Text("\(index + 1). \(item.name) - \(itemPriceString)")
-                                .fontWeight(.semibold)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            Button(action: {
-                                itemsList.remove(at: index)
-                            }) {
-                                Image(systemName: "trash")
-                                    .foregroundColor(.red)
+                    
+                    if !itemsList.isEmpty {
+                        ForEach(itemsList.indices, id: \.self) { index in
+                            let item = itemsList[index]
+                            let itemPriceWithVAT = item.priceWithVAT()
+                            let itemPriceString = item.hasVAT ? "£\(String(format: "%.2f", itemPriceWithVAT)) (incl. VAT)" : "£\(String(format: "%.2f", item.price)) (excl. VAT)"
+                            
+                            HStack {
+                                Text("\(index + 1). \(item.name) - \(itemPriceString)")
+                                    .fontWeight(.semibold)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                Button(action: {
+                                    itemsList.remove(at: index)
+                                }) {
+                                    Image(systemName: "trash")
+                                        .foregroundColor(.red)
+                                }
                             }
                         }
-                        .padding(.bottom, 8)
+                        .padding(12)
+                        Spacer()
+                        
+                        let totalPrice = itemsList.map { $0.hasVAT ? $0.priceWithVAT() : $0.price }.reduce(0, +)
+                        Text("Total Price: £\(String(format: "%.2f", totalPrice))")
+                            .fontWeight(.semibold)
+                            .padding(.bottom, 16)
                     }
-                    
-                    Spacer()
-                    
-                    let totalPrice = itemsList.map { $0.hasVAT ? $0.priceWithVAT() : $0.price }.reduce(0, +)
-                    Text("Total Price: £\(String(format: "%.2f", totalPrice))")
-                        .fontWeight(.semibold)
-                        .padding(.bottom, 16)
                 }
+                .padding()
             }
-            .padding()
             .navigationBarTitle("Booker VAT Calculator")
         }
     }
