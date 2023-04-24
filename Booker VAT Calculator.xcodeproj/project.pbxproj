@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD81EBA329F67258003C0C4B /* Booker_VAT_CalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */; };
+		FD81EBA529F67258003C0C4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBA429F67258003C0C4B /* ContentView.swift */; };
+		FD81EBA729F6725B003C0C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD81EBA629F6725B003C0C4B /* Assets.xcassets */; };
+		FD81EBAA29F6725B003C0C4B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD81EBA929F6725B003C0C4B /* Preview Assets.xcassets */; };
+		FD81EBB429F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBB329F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift */; };
+		FD81EBBE29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */; };
+		FD81EBC029F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD81EBB029F6725B003C0C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD81EB9729F67258003C0C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD81EB9E29F67258003C0C4B;
+			remoteInfo = "Booker VAT Calculator";
+		};
+		FD81EBBA29F6725B003C0C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD81EB9729F67258003C0C4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD81EB9E29F67258003C0C4B;
+			remoteInfo = "Booker VAT Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD81EB9F29F67258003C0C4B /* Booker VAT Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booker VAT Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorApp.swift; sourceTree = "<group>"; };
+		FD81EBA429F67258003C0C4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD81EBA629F6725B003C0C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD81EBA929F6725B003C0C4B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD81EBAF29F6725B003C0C4B /* Booker VAT CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booker VAT CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81EBB329F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorTests.swift; sourceTree = "<group>"; };
+		FD81EBB929F6725B003C0C4B /* Booker VAT CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booker VAT CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITests.swift; sourceTree = "<group>"; };
+		FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booker_VAT_CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD81EB9C29F67258003C0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBAC29F6725B003C0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBB629F6725B003C0C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD81EB9629F67258003C0C4B = {
+			isa = PBXGroup;
+			children = (
+				FD81EBA129F67258003C0C4B /* Booker VAT Calculator */,
+				FD81EBB229F6725B003C0C4B /* Booker VAT CalculatorTests */,
+				FD81EBBC29F6725B003C0C4B /* Booker VAT CalculatorUITests */,
+				FD81EBA029F67258003C0C4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD81EBA029F67258003C0C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD81EB9F29F67258003C0C4B /* Booker VAT Calculator.app */,
+				FD81EBAF29F6725B003C0C4B /* Booker VAT CalculatorTests.xctest */,
+				FD81EBB929F6725B003C0C4B /* Booker VAT CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD81EBA129F67258003C0C4B /* Booker VAT Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				FD81EBA229F67258003C0C4B /* Booker_VAT_CalculatorApp.swift */,
+				FD81EBA429F67258003C0C4B /* ContentView.swift */,
+				FD81EBA629F6725B003C0C4B /* Assets.xcassets */,
+				FD81EBA829F6725B003C0C4B /* Preview Content */,
+			);
+			path = "Booker VAT Calculator";
+			sourceTree = "<group>";
+		};
+		FD81EBA829F6725B003C0C4B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD81EBA929F6725B003C0C4B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD81EBB229F6725B003C0C4B /* Booker VAT CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD81EBB329F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift */,
+			);
+			path = "Booker VAT CalculatorTests";
+			sourceTree = "<group>";
+		};
+		FD81EBBC29F6725B003C0C4B /* Booker VAT CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD81EBBD29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift */,
+				FD81EBBF29F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift */,
+			);
+			path = "Booker VAT CalculatorUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD81EB9E29F67258003C0C4B /* Booker VAT Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81EBC329F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT Calculator" */;
+			buildPhases = (
+				FD81EB9B29F67258003C0C4B /* Sources */,
+				FD81EB9C29F67258003C0C4B /* Frameworks */,
+				FD81EB9D29F67258003C0C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Booker VAT Calculator";
+			productName = "Booker VAT Calculator";
+			productReference = FD81EB9F29F67258003C0C4B /* Booker VAT Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD81EBAE29F6725B003C0C4B /* Booker VAT CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81EBC629F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT CalculatorTests" */;
+			buildPhases = (
+				FD81EBAB29F6725B003C0C4B /* Sources */,
+				FD81EBAC29F6725B003C0C4B /* Frameworks */,
+				FD81EBAD29F6725B003C0C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD81EBB129F6725B003C0C4B /* PBXTargetDependency */,
+			);
+			name = "Booker VAT CalculatorTests";
+			productName = "Booker VAT CalculatorTests";
+			productReference = FD81EBAF29F6725B003C0C4B /* Booker VAT CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD81EBB829F6725B003C0C4B /* Booker VAT CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD81EBC929F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT CalculatorUITests" */;
+			buildPhases = (
+				FD81EBB529F6725B003C0C4B /* Sources */,
+				FD81EBB629F6725B003C0C4B /* Frameworks */,
+				FD81EBB729F6725B003C0C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD81EBBB29F6725B003C0C4B /* PBXTargetDependency */,
+			);
+			name = "Booker VAT CalculatorUITests";
+			productName = "Booker VAT CalculatorUITests";
+			productReference = FD81EBB929F6725B003C0C4B /* Booker VAT CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD81EB9729F67258003C0C4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FD81EB9E29F67258003C0C4B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FD81EBAE29F6725B003C0C4B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD81EB9E29F67258003C0C4B;
+					};
+					FD81EBB829F6725B003C0C4B = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FD81EB9E29F67258003C0C4B;
+					};
+				};
+			};
+			buildConfigurationList = FD81EB9A29F67258003C0C4B /* Build configuration list for PBXProject "Booker VAT Calculator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD81EB9629F67258003C0C4B;
+			productRefGroup = FD81EBA029F67258003C0C4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD81EB9E29F67258003C0C4B /* Booker VAT Calculator */,
+				FD81EBAE29F6725B003C0C4B /* Booker VAT CalculatorTests */,
+				FD81EBB829F6725B003C0C4B /* Booker VAT CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD81EB9D29F67258003C0C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81EBAA29F6725B003C0C4B /* Preview Assets.xcassets in Resources */,
+				FD81EBA729F6725B003C0C4B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBAD29F6725B003C0C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBB729F6725B003C0C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD81EB9B29F67258003C0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81EBA529F67258003C0C4B /* ContentView.swift in Sources */,
+				FD81EBA329F67258003C0C4B /* Booker_VAT_CalculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBAB29F6725B003C0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81EBB429F6725B003C0C4B /* Booker_VAT_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD81EBB529F6725B003C0C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD81EBC029F6725B003C0C4B /* Booker_VAT_CalculatorUITestsLaunchTests.swift in Sources */,
+				FD81EBBE29F6725B003C0C4B /* Booker_VAT_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD81EBB129F6725B003C0C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD81EB9E29F67258003C0C4B /* Booker VAT Calculator */;
+			targetProxy = FD81EBB029F6725B003C0C4B /* PBXContainerItemProxy */;
+		};
+		FD81EBBB29F6725B003C0C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD81EB9E29F67258003C0C4B /* Booker VAT Calculator */;
+			targetProxy = FD81EBBA29F6725B003C0C4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD81EBC129F6725B003C0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD81EBC229F6725B003C0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD81EBC429F6725B003C0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Booker VAT Calculator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD81EBC529F6725B003C0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Booker VAT Calculator/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD81EBC729F6725B003C0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Booker VAT Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Booker VAT Calculator";
+			};
+			name = Debug;
+		};
+		FD81EBC829F6725B003C0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Booker VAT Calculator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Booker VAT Calculator";
+			};
+			name = Release;
+		};
+		FD81EBCA29F6725B003C0C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Booker VAT Calculator";
+			};
+			name = Debug;
+		};
+		FD81EBCB29F6725B003C0C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TomMumford.Booker-VAT-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Booker VAT Calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD81EB9A29F67258003C0C4B /* Build configuration list for PBXProject "Booker VAT Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81EBC129F6725B003C0C4B /* Debug */,
+				FD81EBC229F6725B003C0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81EBC329F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81EBC429F6725B003C0C4B /* Debug */,
+				FD81EBC529F6725B003C0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81EBC629F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81EBC729F6725B003C0C4B /* Debug */,
+				FD81EBC829F6725B003C0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD81EBC929F6725B003C0C4B /* Build configuration list for PBXNativeTarget "Booker VAT CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD81EBCA29F6725B003C0C4B /* Debug */,
+				FD81EBCB29F6725B003C0C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD81EB9729F67258003C0C4B /* Project object */;
+}
