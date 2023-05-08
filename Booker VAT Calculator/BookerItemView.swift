@@ -80,6 +80,15 @@ struct BookerItemList: View {
                 .padding()
             }
             .navigationBarTitle("Booker VAT Calculator")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                let shareItems = itemsList.map { "\($0.name) - \(String(format: "%.2f", $0.priceWithVAT()))" }.joined(separator: "\n")
+                let av = UIActivityViewController(activityItems: [shareItems], applicationActivities: nil)
+                UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+            }) {
+                Image(systemName: "square.and.arrow.up")
+            }
+            )
         }
     }
 }
